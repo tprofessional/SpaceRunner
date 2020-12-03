@@ -19,15 +19,23 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1);
-        for (int i = 0; i<10; i++) {
+        planets();
+        stars();
+    }
+    
+    public void planets() {
+       for (int i = 0; i<10; i++) {
             int x = Greenfoot.getRandomNumber(getWidth());
             int y = Greenfoot.getRandomNumber(getHeight());
             addObject(new Planet(), x, y);
         }
-        //populate();
     }
     
-    public void populate() {
-       //add
+    public void stars() {
+       for (int i = 0; i<10; i++) {
+            int x = Greenfoot.getRandomNumber(getWidth());
+            int y = Greenfoot.getRandomNumber(getHeight());
+            addObject(new Star(), x, y);
+        }
     }
 }
