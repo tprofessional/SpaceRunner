@@ -8,13 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Star extends Actor
 {
-    
-    public Star(int x, int y) {
-        int xLocation = x;
-        int yLocation = y;
-        //starImage= //star image file here
-        //setImage(starImage);
+    static double SCALE = 0.15;
+    public Star() {
+        GreenfootImage image = getImage();
+        double imgW = image.getWidth();
+        double imgH = image.getHeight();
+        image.scale((int) (imgW * SCALE), (int) (imgH * SCALE));
+        setImage(image);
     }
+    
     /**
      * Act - do whatever the Star wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
