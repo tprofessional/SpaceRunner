@@ -10,6 +10,8 @@ public class MyWorld extends World
 {
     int plntXCor = Greenfoot.getRandomNumber(600);
     int plntYCor = Greenfoot.getRandomNumber(400);
+    int starXCor = Greenfoot.getRandomNumber(600);
+    int starYCor = Greenfoot.getRandomNumber(400);
 
     /**
      * Constructor for objects of class MyWorld.
@@ -23,6 +25,11 @@ public class MyWorld extends World
             int x = Greenfoot.getRandomNumber(getWidth());
             int y = Greenfoot.getRandomNumber(getHeight());
             addObject(new Planet(), x, y);
+        }
+        for (int i = 0; i<10; i++) {
+            int a = Greenfoot.getRandomNumber(getWidth());
+            int b = Greenfoot.getRandomNumber(getHeight());
+            addObject(new Star(), a, b);
         }
         //populate();
     }
