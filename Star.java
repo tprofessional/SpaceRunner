@@ -23,7 +23,7 @@ public class Star extends Actor
     
     {
         //if user clicks on this star, printFact method will run and display a fact
-        if(Greenfoot.mouseClicked(this)) {
+        if(isTouching(Rocket.class)) {
             printFact();
         }
     }

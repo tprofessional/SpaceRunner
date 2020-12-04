@@ -36,7 +36,7 @@ public class Planet extends Actor
 
   public void act()
     {
-        if(Greenfoot.mouseClicked(this)) {
+        if(isTouching(Rocket.class)) {
             askQuestion();
         }
     }
@@ -72,10 +72,6 @@ public class Planet extends Actor
                 correct();
               }
             }
-              //if (q.contains("c")){
-              //System.out.println("You are correct!");
-              //totalPoints++; //add variable
-            //}
         }
     else if(number == 2) {
             String q=Greenfoot.ask("How far is Earth from the sun? \n a. 49 million miles \n b. 92 million miles \n c. 127 million miles \n d. 183 million miles");
