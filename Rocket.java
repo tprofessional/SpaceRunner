@@ -20,6 +20,7 @@ public class Rocket extends Actor
         double imgH = image.getHeight();
         image.scale((int)(imgW * SCALE), (int) (imgH * SCALE));
         setImage(image);
+        setRotation(0);
     }
     
     /**
@@ -27,12 +28,14 @@ public class Rocket extends Actor
      */
     public void act() 
     {
-        if (Greenfoot.isKeyDown("left")) {
+        if (Greenfoot.isKeyDown("a")) {
             turn(-3);
         }
-        if (Greenfoot.isKeyDown("right")) {
+        if (Greenfoot.isKeyDown("d")) {
             turn(3);
         }
-        if (Greenfoot.isKeyDown())
+        if (Greenfoot.isKeyDown("w")) {
+            move(3);
+        }
     }
 }

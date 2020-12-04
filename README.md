@@ -2,8 +2,13 @@
 
 Theme: Astrology
 
-Objective: Travel to all the planets and get the highscore by answering the questions. Use the stars as hints.
+Objective: Travel to all the planets and get the high score by answering the questions. Use the stars as hints.
 
-Movement: Use your (mouse/arrowkeys) to guide the rocket to different planets.
+Before starting the game, relocate the planets and/or stars so that they do not overlap :)
 
-General Interactions: Click on stars to get hints
+Movement: Use your w, a, and d keys to guide the rocket to different planets.
+- w: move forward
+- a: move left
+- d: move right
+
+General Instructions: Move the rocket to different planets to answer questions. Move the rocket to stars to see hints.
