@@ -10,6 +10,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Rocket extends Actor
 {
     static double SCALE = 0.1;
+    //instantiate rocket
+    Rocket userRocket = new Rocket();
+    
     /**
      * class constructor Rocket
     */
@@ -28,5 +31,21 @@ public class Rocket extends Actor
     public void act() 
     {
         // Add your action code here.
-    }    
+    }
+    /**
+     * This method makes the rocket align it's heading with the mouse and move 
+     * as the mouse directs it
+     */
+    public void followMouse() {
+        //creates an instance of the MouseInfo class
+        //this will help track the location of the mouse
+        MouseInfo mouse = Greenfoot.getMouseInfo();
+        
+        //gets x position of mouse
+        int mouseX = mouse.getX();
+        //gets y position of mouse
+        int mouseY = mouse.getY();
+        
+        userRocket.turnTowards(mouseX, mouseY);
+    }
 }

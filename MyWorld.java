@@ -24,7 +24,7 @@ public class MyWorld extends World
         //create stars
         stars();
         //initialize rocket
-        rocket();
+        //rocket();
     }
     
     public void planets() {
@@ -44,6 +44,7 @@ public class MyWorld extends World
     }
     
     public void rocket() {
-        addObject(new Rocket(), X_MID, Y_MID); 
+        //replace new Rocket() with instantiated rocket
+        addObject(userRocket, X_MID, Y_MID); 
     }
 }
