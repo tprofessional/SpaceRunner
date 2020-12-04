@@ -1,9 +1,12 @@
 #BlueJ class context
 comment0.target=Star
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Star\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ star\ class\ is\ used\ to\ print\ hints\ for\ future\ questions\ prompted\ by\ the\ planets.\r\n\ \r\n\ Erika\ Tran,\ Trisha\ Moorkoth\r\n\ version\ 1.1\r\n
 comment1.params=
 comment1.target=Star()
 comment2.params=
 comment2.target=void\ act()
 comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Star\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
-numComments=3
+comment3.params=
+comment3.target=void\ printFact()
+comment3.text=\r\n\ Will\ generate\ a\ random\ fact\ to\ display\ to\ user\r\n
+numComments=4

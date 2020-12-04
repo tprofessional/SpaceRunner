@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class MyWorld here.
  * 
- * @authors Trisha Moorkoth, Julia Zhao 
+ * @authors Trisha Moorkoth, Julia Zhao, Erika Tran
  * @version 1.1
  */
 public class MyWorld extends World
@@ -20,7 +20,6 @@ public class MyWorld extends World
         planets();
         //create stars
         stars();
-        
     }
     
     public void planets() {

@@ -11,7 +11,7 @@ public class Planet extends Actor
     public int xcor;
     public int ycor;
     public int rad;
-    static double SCALE = 0.8;
+    static double SCALE = 1;
     
     //creates planets at random positions at random sizes
     public Planet()
