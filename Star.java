@@ -23,8 +23,10 @@ public class Star extends Actor
     
     {
         //if user clicks on this star, printFact method will run and display a fact
-        if(isTouching(Rocket.class)) {
-            printFact();
+        for (int i = 0; i < 10; i++) {
+            if(isTouching(Rocket.class)) {
+                printFact();
+            }
         }
     }
     
