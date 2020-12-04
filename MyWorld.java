@@ -19,12 +19,19 @@ public class MyWorld extends World
     {    
         //Create a new world with 1000x600 cells with a cell size of 1x1 pixels.
         super(1000, 600, 1);
+    }
+    
+    public void main (String[] args) {
+        //replace new Rocket() with instantiated rocket
+        //replace userRocket with getrocket getter method
+        Rocket userRocket = new Rocket();
+        addObject(userRocket, X_MID, Y_MID);
+        
         //create planets
         planets();
+        
         //create stars
         stars();
-        //initialize rocket
-        //rocket();
     }
     
     public void planets() {
@@ -41,10 +48,5 @@ public class MyWorld extends World
             int y = Greenfoot.getRandomNumber(getHeight());
             addObject(new Star(), x, y);
         }
-    }
-    
-    public void rocket() {
-        //replace new Rocket() with instantiated rocket
-        addObject(userRocket, X_MID, Y_MID); 
     }
 }
