@@ -23,28 +23,16 @@ public class Rocket extends Actor
     }
     
     /**
-     * Act - do whatever the Rocket wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - This method makes the rocket move according to arrow keys
      */
     public void act() 
     {
-        // Add your action code here.
-    }
-    
-    /**
-     * followMouse - This method makes the rocket align it's heading with the mouse and move 
-     * as the mouse directs it
-     */
-    public void followMouse(Rocket rocket) {
-        //creates an instance of the MouseInfo class
-        //this will help track the location of the mouse
-        MouseInfo mouse = Greenfoot.getMouseInfo();
-        
-        //gets x position of mouse
-        int mouseX = mouse.getX();
-        //gets y position of mouse
-        int mouseY = mouse.getY();
-        
-        rocket.turnTowards(mouseX, mouseY);
+        if (Greenfoot.isKeyDown("left")) {
+            turn(-3);
+        }
+        if (Greenfoot.isKeyDown("right")) {
+            turn(3);
+        }
+        if (Greenfoot.isKeyDown())
     }
 }
