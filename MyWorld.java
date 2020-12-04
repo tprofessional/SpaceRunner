@@ -30,15 +30,6 @@ public class MyWorld extends World
         rocket();
     }
     
-    public void main (String[] args) {
-        //replace new Rocket() with instantiated rocket
-        //replace userRocket with getrocket getter method
-        //Rocket userRocket = new Rocket();
-        //addObject(userRocket, X_MID, Y_MID);
-        
-        
-    }
-    
     public void planets() {
        for (int i = 0; i<10; i++) {
             int x = Greenfoot.getRandomNumber(getWidth());

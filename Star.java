@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Star extends Actor
 {
     static double SCALE = 0.07;
+    int number = Greenfoot.getRandomNumber(9);
     public Star() {
         GreenfootImage image = getImage();
         double imgW = image.getWidth();
@@ -23,19 +24,17 @@ public class Star extends Actor
     
     {
         //if user clicks on this star, printFact method will run and display a fact
-        for (int i = 0; i < 10; i++) {
-            if(isTouching(Rocket.class)) {
-                printFact();
-            }
+        if(isTouching(Rocket.class)) {
+          printFact();
         }
     }
     
     /**
      * Will generate a random fact to display to user
      */
+    
     public void printFact()
     { 
-        int number = Greenfoot.getRandomNumber(9); // Get random number 0-8, representing all 9 facts
         if(number == 0) {
             System.out.println("The universe is 13.8 billion years old!");
         }

@@ -8,12 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Planet extends Actor
 {
-    //public int xcor;
-    //public int ycor;
-    //public int rad;
     static double SCALE = 1;
-    
     int totalPoints = 0;
+    int number = Greenfoot.getRandomNumber(9);
     
     //creates planets at random positions at random sizes
     public Planet()
@@ -31,26 +28,17 @@ public class Planet extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void correct() {
-    System.out.println("You are correct!");
+      System.out.println("You are correct!");
   }
 
   public void act()
     {
-        for (int i = 0; i < 10; i++) {
-            if(isTouching(Rocket.class)) {
-                askQuestion();
-            }
+        if(isTouching(Rocket.class)) {
+          askQuestion();
         }
     }
     
-    public void end() {
-        System.out.println("Game Over! :(");
-        Greenfoot.stop();
-    }
-
   public void askQuestion() { 
-        int number = Greenfoot.getRandomNumber(9);
-
         if(number == 0) {
             String q = Greenfoot.ask("How old is the universe? \n a. 15.7 billion years \n b. 38.2 million years \n c. 13.8 billion years \n d. 57.4 billion years");
             if (q.contains("c")) {
@@ -60,9 +48,6 @@ public class Planet extends Actor
                 String w = Greenfoot.ask("Sorry, you are incorrect. Please try again. \n a. 15.7 billion years \n b. 38.2 million years \n c. 13.8 billion years \n d. 57.4 billion years");
                 if (w.contains("c")) {
                     correct();
-                }
-                else {
-                    end();
                 }
             }
         }
@@ -76,9 +61,6 @@ public class Planet extends Actor
                 if (w.contains("c")) {
                     correct();
                 }
-                else {
-                    end();
-                }
             }
         }
         else if(number == 2) {
@@ -90,9 +72,6 @@ public class Planet extends Actor
                 String w = Greenfoot.ask("Sorry, you are incorrect. Please try again. \n a. 49 million miles \n b. 92 million miles \n c. 127 million miles \n d. 183 million miles");
                 if (w.contains("b")) {
                     correct();
-                }
-                else {
-                    end();
                 }
             }
         }
@@ -106,9 +85,6 @@ public class Planet extends Actor
                 if (w.contains("b")) {
                     correct();
                 }
-                else {
-                    end();
-                }
             }
         }
         else if(number == 4) {
@@ -120,9 +96,6 @@ public class Planet extends Actor
                 String w = Greenfoot.ask("Sorry, you are incorrect. Please try again. \n a. The body with a greater mass \n b. The body with a greater volume \n c. Neither \n d. The body with a greater angular velocity");
                 if (w.contains("a")) {
                     correct();
-                }
-                else {
-                    end();
                 }
             }
         }
@@ -136,9 +109,6 @@ public class Planet extends Actor
                 if (w.contains("a")) {
                     correct();
                 }
-                else {
-                    end();
-                }
             }
         }
         else if(number == 6) {
@@ -150,9 +120,6 @@ public class Planet extends Actor
                 String w = Greenfoot.ask("Sorry, you are incorrect. Please try again. \n a. 150 years \n b. 78 years \n c. 10 years \n d. 360 years");
                 if (w.contains("d")) {
                     correct();
-                }
-                else {
-                    end();
                 }
             }
         }
@@ -166,9 +133,6 @@ public class Planet extends Actor
                 if (w.contains("a")) {
                     correct();
                 }
-                else {
-                    end();
-                }
             }
         }
         else if(number == 8) {
@@ -180,9 +144,6 @@ public class Planet extends Actor
                 String w = Greenfoot.ask("Sorry, you are incorrect. Please try again. \n a. 1 \n b. 2 \n c. 3 \n d. 4");
                 if (w.contains("c")) {
                     correct();
-                }
-                else {
-                    end();
                 }
             }
         }
