@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Planet extends Actor
 {
     static double SCALE = 1;
-    int number = Greenfoot.getRandomNumber(9);
     
     public Planet()
     {       
@@ -40,6 +39,9 @@ public class Planet extends Actor
    * askQuestion - details assignments of random numbers 0-8 to questions
    */
   public void askQuestion() { 
+        //assign random number to question
+        int number = Greenfoot.getRandomNumber(9);
+    
         if(number == 0) {
             //question console appears
             String q = Greenfoot.ask("How old is the universe? \n a. 15.7 billion years \n b. 38.2 million years \n c. 13.8 billion years \n d. 57.4 billion years");

@@ -9,5 +9,5 @@ comment2.target=void\ act()
 comment2.text=\r\n\ Act\ -\ if\ star\ is\ in\ contact\ with\ the\ rocket,\ printFact()\ method\ is\ called\r\n
 comment3.params=
 comment3.target=void\ printFact()
-comment3.text=\r\n\ printFact\ -\ details\ assignments\ of\ random\ number\ 0\ -\ 8\ (see\ int\ number\ in\ variable\ declarations)\ and\ prints\ it\r\n
+comment3.text=\r\n\ printFact\ -\ details\ assignments\ of\ random\ number\ 0\ -\ 8\ and\ prints\ it\r\n
 numComments=4

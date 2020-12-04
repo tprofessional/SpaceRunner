@@ -9,9 +9,6 @@ public class Star extends Actor
 {
     static double SCALE = 0.07;
     
-    //use to assign hint to star randomly
-    int number = Greenfoot.getRandomNumber(9);
-    
     /**
      * Constructor for Star class
      */
@@ -36,11 +33,13 @@ public class Star extends Actor
     }
     
     /**
-     * printFact - details assignments of random number 0 - 8 (see int number in variable declarations) and prints it
+     * printFact - details assignments of random number 0 - 8 and prints it
      */
     
     public void printFact()
     { 
+        //use to assign hint to star randomly
+        int number = Greenfoot.getRandomNumber(9);
         if(number == 0) {
             System.out.println("The universe is 13.8 billion years old!");
         }
