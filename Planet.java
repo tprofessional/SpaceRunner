@@ -3,19 +3,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Planets contain questions that you can answer to get points.
  * 
- * @author Trisha Moorkoth 
- * @version 1.1
+ * @author Erika Tran, Kellie Tai, Julia Zhao, Trisha Moorkoth
+ * @version 1.2
  */
 public class Planet extends Actor
 {
     static double SCALE = 1;
-    int totalPoints = 0;
     int number = Greenfoot.getRandomNumber(9);
     
-    //creates planets at random positions at random sizes
     public Planet()
     {       
-       //GreenfootImage image = new GreenfootImage(10, 10);
+       //set image of Planet objects
        GreenfootImage image = getImage();
        double imgW = image.getWidth();
        double imgH = image.getHeight();
@@ -24,33 +22,41 @@ public class Planet extends Actor
     }
     
     /**
-     * Act - do whatever the Planet wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * correct - prints out 'correct' message
      */
     public void correct() {
       System.out.println("You are correct!");
   }
-
+  /**
+   * Act - if planet is touching a rocket, askQuestion() method is called
+   */
   public void act()
     {
         if(isTouching(Rocket.class)) {
           askQuestion();
         }
     }
-    
+  /**
+   * askQuestion - details assignments of random numbers 0-8 to questions
+   */
   public void askQuestion() { 
         if(number == 0) {
+            //question console appears
             String q = Greenfoot.ask("How old is the universe? \n a. 15.7 billion years \n b. 38.2 million years \n c. 13.8 billion years \n d. 57.4 billion years");
+            //check for correct answer, "c"
             if (q.contains("c")) {
+            //if answer submitted is correct, print correct message from correct() method
             correct();
             }
             else {
+                //if incorrect we give them another try
                 String w = Greenfoot.ask("Sorry, you are incorrect. Please try again. \n a. 15.7 billion years \n b. 38.2 million years \n c. 13.8 billion years \n d. 57.4 billion years");
                 if (w.contains("c")) {
                     correct();
                 }
             }
         }
+        //else ifs check all possible random numbers in range 0 - 8
         else if(number == 1) {
             String q = Greenfoot.ask("How hot is the sun? \n a. 4,000 degrees Fahrenheit \n b. 8,000 degrees Fahrenheit \n c. 10,000 degrees Fahrenheit \n d. 13,000 degrees Fahrenheit");
             if (q.contains("c")) {

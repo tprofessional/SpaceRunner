@@ -1,13 +1,15 @@
 #BlueJ class context
 comment0.target=Planet
-comment0.text=\r\n\ Planets\ contain\ questions\ that\ you\ can\ answer\ to\ get\ points.\r\n\ \r\n\ @author\ Trisha\ Moorkoth\ \r\n\ @version\ 1.1\r\n
+comment0.text=\r\n\ Planets\ contain\ questions\ that\ you\ can\ answer\ to\ get\ points.\r\n\ \r\n\ @author\ Erika\ Tran,\ Kellie\ Tai,\ Julia\ Zhao,\ Trisha\ Moorkoth\r\n\ @version\ 1.2\r\n
 comment1.params=
 comment1.target=Planet()
 comment2.params=
 comment2.target=void\ correct()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Planet\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.text=\r\n\ correct\ -\ prints\ out\ 'correct'\ message\r\n
 comment3.params=
 comment3.target=void\ act()
+comment3.text=\r\n\ Act\ -\ if\ planet\ is\ touching\ a\ rocket,\ askQuestion()\ method\ is\ called\r\n
 comment4.params=
 comment4.target=void\ askQuestion()
+comment4.text=\r\n\ askQuestion\ -\ details\ assignments\ of\ random\ numbers\ 0-8\ to\ questions\r\n
 numComments=5

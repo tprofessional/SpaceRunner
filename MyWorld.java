@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Initializes the stars, planets, and the rocket.
  * 
- * @authors Trisha Moorkoth, Julia Zhao, Erika Tran
+ * @authors Trisha Moorkoth, Julia Zhao, Erika Tran, Kellie Tai
  * @version 1.1
  */
 public class MyWorld extends World
@@ -26,18 +26,24 @@ public class MyWorld extends World
         //create stars
         stars();
         
-        //add rocket
+        //create rocket
         rocket();
     }
     
+    /**
+     * planets - randomize location of planets within world
+     */
     public void planets() {
        for (int i = 0; i<10; i++) {
+            //make planets randomly appear in world
             int x = Greenfoot.getRandomNumber(getWidth());
             int y = Greenfoot.getRandomNumber(getHeight());
             addObject(new Planet(), x, y);
         }
     }
-    
+    /**
+     * stars - randomize location of stars within world
+     */
     public void stars() {
         for (int i = 0; i<10; i++) {
             int x = Greenfoot.getRandomNumber(getWidth());
@@ -45,7 +51,9 @@ public class MyWorld extends World
             addObject(new Star(), x, y);
         }
     }
-    
+    /**
+     * rocket - initialize rocket in the middle of the world
+     */
     public void rocket() {
         Rocket userRocket = new Rocket();
         addObject(userRocket, X_MID, Y_MID);

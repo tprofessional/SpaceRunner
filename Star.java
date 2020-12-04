@@ -3,13 +3,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * The star class is used to print hints for future questions prompted by the planets.
  * 
  * Erika Tran, Trisha Moorkoth
- * version 1.1
+ * version 1.2
  */
 public class Star extends Actor
 {
     static double SCALE = 0.07;
+    
+    //use to assign hint to star randomly
     int number = Greenfoot.getRandomNumber(9);
+    
+    /**
+     * Constructor for Star class
+     */
     public Star() {
+        //set image of objects
         GreenfootImage image = getImage();
         double imgW = image.getWidth();
         double imgH = image.getHeight();
@@ -17,20 +24,19 @@ public class Star extends Actor
         setImage(image);
     }
     /**
-     * Act - do whatever the Star wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - if star is in contact with the rocket, printFact() method is called
      */
     public void act() 
     
     {
-        //if user clicks on this star, printFact method will run and display a fact
+        //if rocket touches star, printFact method will run and display a fact
         if(isTouching(Rocket.class)) {
           printFact();
         }
     }
     
     /**
-     * Will generate a random fact to display to user
+     * printFact - details assignments of random number 0 - 8 (see int number in variable declarations) and prints it
      */
     
     public void printFact()
