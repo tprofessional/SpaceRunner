@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Planet here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Trisha Moorkoth 
+ * @version 1.1
  */
 public class Planet extends Actor
 {
