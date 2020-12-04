@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Rocket here.
+ * The Rocket is a sprite controlled by the user. The user uses their cursor to control 
+ * the movement of the rocket
  * 
  * @author Trisha Moorkoth
  * @version 1.0

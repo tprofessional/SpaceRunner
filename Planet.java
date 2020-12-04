@@ -1,16 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Planet here.
+ * Planets contain questions that you can answer to get points.
  * 
  * @author Trisha Moorkoth 
  * @version 1.1
  */
 public class Planet extends Actor
 {
-    public int xcor;
-    public int ycor;
-    public int rad;
+    //public int xcor;
+    //public int ycor;
+    //public int rad;
     static double SCALE = 1;
     
     //creates planets at random positions at random sizes

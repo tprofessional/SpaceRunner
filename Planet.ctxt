@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Planet
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Planet\ here.\r\n\ \r\n\ @author\ Trisha\ Moorkoth\ \r\n\ @version\ 1.1\r\n
+comment0.text=\r\n\ Planets\ contain\ questions\ that\ you\ can\ answer\ to\ get\ points.\r\n\ \r\n\ @author\ Trisha\ Moorkoth\ \r\n\ @version\ 1.1\r\n
 comment1.params=
 comment1.target=Planet()
 comment2.params=

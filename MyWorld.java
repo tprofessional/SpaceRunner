@@ -1,13 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * Initializes the stars, planets, and the rocket.
  * 
  * @authors Trisha Moorkoth, Julia Zhao, Erika Tran
  * @version 1.1
  */
 public class MyWorld extends World
 {
+    final int X_MID = getWidth()/2;
+    final int Y_MID = getHeight()/2;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -20,6 +23,8 @@ public class MyWorld extends World
         planets();
         //create stars
         stars();
+        //initialize rocket
+        rocket();
     }
     
     public void planets() {
@@ -36,5 +41,9 @@ public class MyWorld extends World
             int y = Greenfoot.getRandomNumber(getHeight());
             addObject(new Star(), x, y);
         }
+    }
+    
+    public void rocket() {
+        addObject(new Rocket(), X_MID, Y_MID); 
     }
 }
