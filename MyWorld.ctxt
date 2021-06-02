@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=MyWorld
+comment0.text=\r\n\ Initializes\ the\ stars,\ planets,\ and\ the\ rocket.\r\n\ \r\n\ @authors\ Trisha\ Moorkoth,\ Julia\ Zhao,\ Erika\ Tran,\ Kellie\ Tai\r\n\ @version\ 1.1\r\n
+comment1.params=
+comment1.target=MyWorld()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ planets()
+comment2.text=\r\n\ planets\ -\ randomize\ location\ of\ planets\ within\ world\r\n
+comment3.params=
+comment3.target=void\ stars()
+comment3.text=\r\n\ stars\ -\ randomize\ location\ of\ stars\ within\ world\r\n
+comment4.params=
+comment4.target=void\ rocket()
+comment4.text=\r\n\ rocket\ -\ initialize\ rocket\ in\ the\ middle\ of\ the\ world\r\n
+numComments=5
